@@ -30,5 +30,13 @@ print(student1.name);
 
 //? example 2
 
-const student2 = { ...student1 };
-student2;
+//const student2 = { ...student1 };
+// student2.address.permanent = "z";
+// console.log(student1);
+
+// ? deep copy
+// structuredClone
+
+const student2 = structuredClone(student1);
+student2.address.permanent = "Z";
+console.log(student1);
