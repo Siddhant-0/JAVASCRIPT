@@ -87,8 +87,11 @@ const itemPrice = [15, 50, 44, 100];
 //studentList.sort().reverse()                       //! tosorted() used to make a new array as sort() changes the original array
 // console.log(studentList);
 
-const numList = [1, 100, 11, 102, 111, 2, 23, 20, 50, 51, 505];
 
-console.log(numList.sort());
+let numList = [1, 100, 11, 111, 2, 23, 20, 50, 51, 505];
 
-numList.sort((a, b) => a - b); //!ascending numiric sort
+numList.sort();
+console.log(numList); //! watch out for numeric sort as it checks the first number
+numList.sort((a, b) => a - b); //ascending numeric sort
+// numList.sort((a, b) => b - a); //descending numeric sort
+console.log(numList);
